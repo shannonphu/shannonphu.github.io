@@ -31,7 +31,7 @@ $(document).ready(function() {
 			// make width of overlay 100% over img
 		    $(this).find('h3').width($('.fotorama').width());
 		    // make height of overlay 100% over img
-		    imgHeight = $(this).find('img').height();
+		    imgHeight = $(this).find('.image-set').height();
 		    lineHeight = String(imgHeight) + "px";
 		    console.log(lineHeight);
 			$(this).find('h3').css("line-height", lineHeight);
