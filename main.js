@@ -2,6 +2,8 @@ $(document).ready(function() {
 	var imgHeight, lineHeight;
 	var animate = true;
 
+	projectOverlay();
+
 	// make nav + content divs responsive
 	function checkWidth() {
 		if ($(window).width() <= 575) {
@@ -26,7 +28,6 @@ $(document).ready(function() {
 	function projectOverlay() {
 		// set up project blocks
 		$('.project-description').each(function(i, obj) {
-			console.log("project overlay");
 			// make width of overlay 100% over img
 		    $(this).find('h3').width($('.fotorama').width());
 		    // make height of overlay 100% over img
