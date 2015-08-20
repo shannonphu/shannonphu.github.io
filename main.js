@@ -25,8 +25,8 @@ $(document).ready(function() {
 
 	function projectOverlay() {
 		// set up project blocks
-		console.log("project overlay");
 		$('.project-description').each(function(i, obj) {
+			console.log("project overlay");
 			// make width of overlay 100% over img
 		    $(this).find('h3').width($('.fotorama').width());
 		    // make height of overlay 100% over img
