@@ -44,6 +44,7 @@ $(document).ready(function() {
 	checkWidth();
 	addFotorama();
 	projectOverlay();
+	checkWidth();
 
 	// project block animation based on window width
 	if (animate) {
