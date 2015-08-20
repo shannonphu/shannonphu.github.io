@@ -32,6 +32,7 @@ $(document).ready(function() {
 		    // make height of overlay 100% over img
 		    imgHeight = $(this).find('img').height();
 		    lineHeight = String(imgHeight) + "px";
+		    console.log(lineHeight);
 			$(this).find('h3').css("line-height", lineHeight);
 		});
 	}
