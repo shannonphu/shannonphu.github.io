@@ -1,0 +1,84 @@
+nav {
+  background: url("img/background/congruent_outline.png");
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  padding: 20px; }
+  nav a {
+    color: white;
+    font-family: 'Marvel', sans-serif;
+    font-size: 1.4em;
+    line-height: 3em; }
+    nav a:hover {
+      color: mediumaquamarine;
+      text-decoration: none; }
+  nav #logo {
+    margin-top: 10px;
+    width: 200px;
+    height: 180px;
+    border: 1px solid white;
+    line-height: 180px; }
+    nav #logo a {
+      color: white;
+      font-size: 2.5em;
+      width: 100%;
+      font-family: "Quantico", sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1em;
+      padding: 20px;
+      border-top: 1px solid #B2E6D4;
+      border-bottom: 1px solid #B2E6D4;
+      background-color: rgba(255, 255, 255, 0.2); }
+  nav .nav-links {
+    margin-top: 100px; }
+
+.content {
+  padding: 20px; }
+
+#aboutme p {
+  border-left: 2px solid darkgrey;
+  padding-left: 1em; }
+
+#design {
+  text-align: center; }
+  #design img {
+    border: 1px solid darkgrey; }
+  #design a {
+    color: black;
+    font-family: "Quantico", sans-serif;
+    font-size: 1.3em; }
+    #design a:hover {
+      color: mediumaquamarine; }
+
+#contact {
+  background-color: lightgrey;
+  padding: 10px;
+  text-align: center; }
+  #contact a {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.1em;
+    color: black; }
+    #contact a:hover {
+      color: black; }
+  #contact #github {
+    float: right; }
+  #contact img {
+    height: 1.4em;
+    vertical-align: text-top; }
+
+section h2 {
+  font-family: "Quantico", sans-serif; }
+section .project {
+  margin: 0 0 2rem 0; }
+  section .project h3 {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    z-index: 10;
+    font-family: "Quantico", sans-serif; }
+section .description {
+  margin-bottom: 2em; }
+
+/*# sourceMappingURL=style.css.map */
