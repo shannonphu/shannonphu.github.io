@@ -18,7 +18,6 @@ $(document).ready(function() {
 			$('nav').removeClass("small-12 columns");
 			$('nav').css("position", "fixed");
 			$('.content').css("margin-left", navWidth + 20);
-
 			projectOverlay();
 		}		
 	}
@@ -29,7 +28,7 @@ $(document).ready(function() {
 			// make width of overlay 100% over img
 		    $(this).find('h3').width($('.fotorama').width());
 		    // make height of overlay 100% over img
-		    imgHeight = $(this).find('.image-set').height();
+		    imgHeight = $(this).find('img').height();
 		    lineHeight = String(imgHeight) + "px";
 		    console.log(lineHeight);
 			$(this).find('h3').css("line-height", lineHeight);
