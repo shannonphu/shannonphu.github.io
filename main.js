@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+	$('img').each(function(i, obj) {
+		while($('img').height() == 0) {
+			console.log("waiting");
+		}
+	});
+
 	var imgHeight, lineHeight;
 	var animate = true;
 
