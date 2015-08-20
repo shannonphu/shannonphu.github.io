@@ -2,8 +2,6 @@ $(document).ready(function() {
 	var imgHeight, lineHeight;
 	var animate = true;
 
-	projectOverlay();
-
 	// make nav + content divs responsive
 	function checkWidth() {
 		if ($(window).width() <= 575) {
@@ -46,6 +44,7 @@ $(document).ready(function() {
 
 	checkWidth();
 	addFotorama();
+	projectOverlay();
 
 	// project block animation based on window width
 	if (animate) {
