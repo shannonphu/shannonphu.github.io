@@ -32,8 +32,8 @@ $(document).ready(function() {
 		    imgHeight = $(this).find('img').height();
 		    //lineHeight = String(imgHeight) + "px";
 		    lineHeight = "2em";
-		    console.log(lineHeight);
 			$(this).find('h3').css("line-height", lineHeight);
+			$(".fotorama").css("margin-top", "3.5em");
 		});
 	}
 
