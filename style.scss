@@ -1,4 +1,7 @@
 $main-font: 'Quantico', sans-serif;
+$side-font: 'Marvel', sans-serif;
+
+
 
 nav {
 	background: url('img/background/congruent_outline.png');
@@ -39,12 +42,12 @@ nav {
 	}
 	#quote {
 		margin-top: 1em;
-		color: white;
-		font-size: 1em;
-		font-family: 'Marvel', sans-serif;
+		color: mediumaquamarine;
+		font-size: 1.2em;
+		font-family: $side-font;
 	}
 	.nav-links {
-		margin-top: 70px;
+		margin-top: 60px;
 	}
 }
 
@@ -56,6 +59,7 @@ nav {
 	// make height 100%
 	border-left: 2px solid darkgrey;
 	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #design {
@@ -99,7 +103,6 @@ section {
 		font-family: $main-font;
 	}
 	.project {
-		margin: 0 0 2rem 0;
 		h3 {
 			position: absolute;
 			text-align: center;

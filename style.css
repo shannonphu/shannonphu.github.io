@@ -32,18 +32,19 @@ nav {
       background-color: rgba(255, 255, 255, 0.2); }
   nav #quote {
     margin-top: 1em;
-    color: white;
-    font-size: 1em;
-    font-family: 'Marvel', sans-serif; }
+    color: mediumaquamarine;
+    font-size: 1.2em;
+    font-family: "Marvel", sans-serif; }
   nav .nav-links {
-    margin-top: 70px; }
+    margin-top: 60px; }
 
 .content {
   padding: 20px; }
 
 #aboutme p {
   border-left: 2px solid darkgrey;
-  padding-left: 1em; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 #design {
   text-align: center; }
@@ -74,15 +75,13 @@ nav {
 
 section h2 {
   font-family: "Quantico", sans-serif; }
-section .project {
-  margin: 0 0 2rem 0; }
-  section .project h3 {
-    position: absolute;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    z-index: 10;
-    font-family: "Quantico", sans-serif; }
+section .project h3 {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  z-index: 10;
+  font-family: "Quantico", sans-serif; }
 section .description {
   margin-bottom: 2em; }
 
