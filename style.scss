@@ -13,7 +13,7 @@ nav {
 		color: white;
 		font-family: 'Marvel', sans-serif;
 		font-size: 1.4em;
-		line-height: 3em;
+		line-height: 2em;
 		&:hover {
 			color: mediumaquamarine;
 			text-decoration: none;
@@ -21,7 +21,7 @@ nav {
 	}
 	#logo {
 		margin-top: 10px;
-		width: 200px;
+		width: 80%;
 		height: 180px;
 		border: 1px solid white;
 		line-height: 180px;
@@ -47,7 +47,7 @@ nav {
 		font-family: $side-font;
 	}
 	.nav-links {
-		margin-top: 60px;
+		margin-top: 2em;
 	}
 }
 
