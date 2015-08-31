@@ -1,7 +1,9 @@
 $main-font: 'Quantico', sans-serif;
 $side-font: 'Marvel', sans-serif;
 
-
+#aboutme p, .description {
+	font-family: Trebuchet MS, sans-serif;
+}
 
 nav {
 	background: url('img/background/congruent_outline.png');
@@ -10,8 +12,8 @@ nav {
 	z-index: 10;
 	padding: 20px;
 	a {
-		color: white;
 		font-family: 'Marvel', sans-serif;
+		color: white;
 		font-size: 1.4em;
 		line-height: 2em;
 		&:hover {
