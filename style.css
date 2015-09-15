@@ -87,5 +87,9 @@ section .project h3 {
   font-family: "Quantico", sans-serif; }
 section .description {
   margin-bottom: 2em; }
+  section .description a {
+    color: mediumaquamarine; }
+    section .description a:hover {
+      color: #31915C; }
 
 /*# sourceMappingURL=style.css.map */

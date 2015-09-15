@@ -119,5 +119,11 @@ section {
 	}
 	.description {
 		margin-bottom: 2em;
+		a {
+			color: mediumaquamarine;
+			&:hover {
+				color: #31915C;
+			}
+		}
 	}
 }
