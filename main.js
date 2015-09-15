@@ -80,7 +80,10 @@ $(document).ready(function() {
 		$('#project-content > .project-description').wrapAll('<div class="row" />');
 	}
 	else {
-		$(".project h3").css("line-height", "2em");
+		$(".project h3").css({
+			lineHeight: "2em",
+			backgroundColor: 'rgba(0,0,0,0.5)'
+		});
 		$(".fotorama").css("margin-top", "3em");
 		$('.project p').show();
 	}
