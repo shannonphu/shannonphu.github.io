@@ -30,16 +30,15 @@ $(document).ready(function() {
 		    $(this).find('h3').width($('.fotorama').width());
 		    // make height of overlay 100% over img
 		    imgHeight = $(this).find('img').height();
-		    //lineHeight = String(imgHeight) + "px";
 		    lineHeight = "2em";
 			$(this).find('h3').css("line-height", lineHeight);
-			$(".fotorama").css("margin-top", "3.5em");
+			$(".fotorama-project").css("margin-top", "3.5em");
 		});
 	}
 
 	function addFotorama() {
 		$('.project-description').each(function(i, obj) {
-			$(this).find('.image-set').children().wrapAll('<div class="fotorama" data-autoplay="2000"/>');
+			$(this).find('.image-set').children().wrapAll('<div class="fotorama fotorama-project" data-autoplay="2000"/>');
 		});
 	}
 
@@ -55,11 +54,11 @@ $(document).ready(function() {
 		    $(this).find('h3').animate({
 		    	'line-height':'2em'
 		    }, 'slow');
-		    $(this).find('.fotorama').animate({
+		    $(this).find('.fotorama-project').animate({
 		    	'marginTop':'3.5em'
 		    }, 'slow');
 		  }, function() {
-		    $(this).find('.fotorama').animate({
+		    $(this).find('.fotorama-project').animate({
 		    	'marginTop': 0
 		    }, 'slow');
 		    imgHeight = $(this).find('img').height();

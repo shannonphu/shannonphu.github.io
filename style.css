@@ -59,6 +59,8 @@ nav {
     font-size: 1.3em; }
     #design a:hover {
       color: mediumaquamarine; }
+  #design .design-fotorama {
+    margin-top: 1em; }
 
 #contact {
   background-color: lightgrey;
