@@ -49,23 +49,23 @@ $(document).ready(function() {
 	// project block animation based on window width
 	if (animate) {
 		// project blocks
-		$( ".project" ).hover(
-		  function() {
-		    $(this).find('h3').animate({
-		    	'line-height':'2em'
-		    }, 'slow');
-		    $(this).find('.fotorama-project').animate({
-		    	'marginTop':'3.5em'
-		    }, 'slow');
-		  }, function() {
-		    $(this).find('.fotorama-project').animate({
-		    	'marginTop': 0
-		    }, 'slow');
-		    imgHeight = $(this).find('img').height();
-		    lineHeight = String(imgHeight) + "px";
-			$(this).find('h3').animate({"line-height":lineHeight});
-		  }
-		);
+		// $( ".project" ).hover(
+		//   function() {
+		//     $(this).find('h3').animate({
+		//     	'line-height':'2em'
+		//     }, 'slow');
+		//     $(this).find('.fotorama-project').animate({
+		//     	'marginTop':'3.5em'
+		//     }, 'slow');
+		//   }, function() {
+		//     $(this).find('.fotorama-project').animate({
+		//     	'marginTop': 0
+		//     }, 'slow');
+		//     imgHeight = $(this).find('img').height();
+		//     lineHeight = String(imgHeight) + "px";
+		// 	$(this).find('h3').animate({"line-height":lineHeight});
+		//   }
+		// );
 
 		// set rows for project blocks
 		var blocksPerRow;
