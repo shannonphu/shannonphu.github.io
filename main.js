@@ -48,17 +48,6 @@ var data = { projects: [
     	]
     },
     {
-    	title: "Social Media Analytic",
-    	link: "" ,
-    	description: "The <a href=\"http://morningsignout.github.io/facebook-analytic\">Facebook Analytic</a> and <a href=\"http://morningsignout.github.io/instagram-analytic\">Instagram Analytic</a> was created as a way for Morning Sign Out to automate the process of recording which Facebook page member or Instagram follower liked/commented on MSO posts to analyze company social media presence.", 
-    	tools: "Facebook-Graph-API Instagram-API Javascript JSON", 
-    	images: [
-    		"img/facebook-analytic/fb-analytic2.png",
-    		"img/facebook-analytic/fb-analytic.png",
-    		"img/facebook-analytic/instagram.jpg"
-    	]
-    },
-    {
     	title: "Boulder Blast",
     	link: "" ,
     	description: "Blast through bullet-shooting robots and other obstacles to collect all the gems in this multi-level C++ game. Push boulders around to fill up giant ditches so you can cross. Pick up health and ammo goodies to replenish your supplies.", 
