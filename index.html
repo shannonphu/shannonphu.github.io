@@ -45,7 +45,7 @@
 			<script id="project-template" type="text/x-handlebars-template">
 				{{#projects}}
 				<div class="project-description medium-12 large-6 columns">
-					<div class="project large-12 columns">
+					<div class="project">
 						<h3>{{title}}</h3>
 						<div class="fotorama"
 							data-transition="crossfade"
@@ -55,7 +55,7 @@
 					  		{{/images}}
 					  	</div>
 					</div>
-					<div class="description large-12 columns">
+					<div class="description">
 						{{#if link}}
 							<a href="{{link}}">{{title}}</a> 
 						{{/if}}
@@ -72,6 +72,31 @@
 			
 			<section id="projects">
 				<h2>Projects</h2>
+				
+				<div class="main-project">
+					<div class="project-description row">
+						<div class="project">
+							<h3>Bing Olympics Experience</h3>
+							<div class="fotorama"
+								data-transition="crossfade"
+								data-autoplay="false">
+								<img src="img/olympics/olym1.PNG"/>
+								<img src="img/olympics/olym2.PNG"/>
+								<img src="img/olympics/olym3.PNG"/>
+								<img src="img/olympics/olym4.PNG"/>
+								<img src="img/olympics/olym5.PNG"/>
+								<img src="img/olympics/olym6.PNG"/>
+						  	</div>
+						</div>
+						<div class="description">
+							Desc
+							
+							<br>
+							<strong>C# ASP.Net</strong>
+						</div>
+					</div>
+				</div>
+
 				<div class="project-content"></div>
 			</section>
 
