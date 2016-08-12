@@ -49,23 +49,11 @@ nav {
   padding-left: 1em;
   padding-right: 1em; }
 
-#design {
-  text-align: center; }
-  #design img {
-    border: 1px solid darkgrey; }
-  #design a {
-    color: black;
-    font-family: "Quantico", sans-serif;
-    font-size: 1.3em; }
-    #design a:hover {
-      color: mediumaquamarine; }
-  #design .design-fotorama {
-    margin-top: 1em; }
-
 #contact {
-  background-color: lightgrey;
-  padding: 10px;
   text-align: center; }
+  #contact h2 {
+    font-size: 2em;
+    text-align: left; }
   #contact a {
     font-family: "Quantico", sans-serif;
     font-size: 1.1em;
@@ -78,20 +66,16 @@ nav {
     height: 1.4em;
     vertical-align: text-top; }
 
-section h2 {
-  font-family: "Quantico", sans-serif; }
-section .project h3 {
-  position: absolute;
+.project-description .project h3 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  z-index: 10;
   font-family: "Quantico", sans-serif; }
-section .description {
+.project-description .description {
   margin-bottom: 2em; }
-  section .description a {
+  .project-description .description a {
     color: mediumaquamarine; }
-    section .description a:hover {
+    .project-description .description a:hover {
       color: #31915C; }
 
 /*# sourceMappingURL=style.css.map */

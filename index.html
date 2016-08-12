@@ -31,7 +31,6 @@
 			<div class="nav-links">
 				<a class="row" href="#aboutme">About Me</a>
 				<a class="row" href="#projects">Projects</a>
-				<a class="row" href="#design">Design</a>
 				<a class="row" href="#contact">Contact</a>
 				<a class="row" href="http://shannonphu.github.io/resume/">Resume</a>
 			</div>
@@ -40,285 +39,61 @@
 		<div class="content">
 			<section id="aboutme">
 				<h2>About Me</h2>
-				<p>I am a second year Computer Science and Engineering student at UCLA. I find enjoyment in developing web and iOS mobile applications. I love self-learning things, including but not limited to, programming and foreign languages. Currently I am very excited about building real-time applications with websockets and creating data visualizations with various JavaScript libraries. I spend my free time designing and developing UI focused responsive websites. Learn more about me through my projects below or through my resume.</p>
+				<p>I am a third year Computer Science and Engineering student at UCLA. I find enjoyment in developing web and iOS mobile applications. I love self-learning and am excited about building cool products. I spend my free time learning about new web development frameworks and machine learning. Learn more about me through my projects below or through my resume.</p>
 			</section>
 
+			<script id="project-template" type="text/x-handlebars-template">
+				{{#projects}}
+				<div class="project-description medium-12 large-6 columns">
+					<div class="project large-12 columns">
+						<h3>{{title}}</h3>
+						<div class="fotorama fotorama-project" data-autoplay="2000">
+							{{#images}}
+							<img src="{{this}}">
+					  		{{/images}}
+					  	</div>
+					</div>
+					<div class="description large-12 columns">
+						{{#if link}}
+							<a href="{{link}}">{{title}}</a> 
+						{{/if}}
+						
+						{{{description}}}
+						
+						<br>
+						<strong>{{tools}}</strong>
+					</div>
+				</div>
+				{{/projects}}
+			</script>
+
+			
 			<section id="projects">
 				<h2>Projects</h2>
-				<div id="project-content">
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Spectrum</h3>
-							<div class="image-set">
-								<img src="img/spectrum/spectrum1.JPG">
-						  		<img src="img/spectrum/spectrum2.JPG">
-						  		<img src="img/spectrum/spectrum3.JPG">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							<a href="http://dailybruin.com/category/spectrum/">Spectrum</a> by the Daily Bruin is a photo gallery showing high quality photosets taken by newsroom photographers. View all the galleries that exist or browse through a slideshow of a gallery of interest!
-							<br>
-							<strong>PHP JavaScript Wordpress API</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>NYTimes Top Stories</h3>
-							<div class="image-set">
-								<img src="img/nytimes/nytimes1.png">
-						  		<img src="img/nytimes/nytimes2.png">
-						  		<img src="img/nytimes/nytimes3.png">
-						  		<img src="img/nytimes/nytimes4.png">
-						  		<img src="img/nytimes/nytimes5.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							<a href="http://shannonphu.github.io/top-nytimes-stories/">NYTimes Top Stories</a> is a data visualization of all the top trending stories in all of The New York Times' sections. This project interactively shows the many top stories in any preferred section. It conveniently links users to the full article after giving users a brief abstract of the news story. 
-							<br>
-							<strong>d3.js NYTimes API semantic-ui JavaScript JSON</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Women In Engineering</h3>
-							<div class="image-set">
-								<img src="img/women-in-engineering/women-engineer1.png">
-						  		<img src="img/women-in-engineering/women-engineer2.png">
-						  		<img src="img/women-in-engineering/women-engineer3.png">
-						  		<img src="img/women-in-engineering/women-engineer4.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							<a href="http://shannonphu.github.io/women-in-engineering/">This project</a> is a data visualization of the numbers and percentages of females in engineering at many different companies. The data was taken from an <a href="https://github.com/triketora/women-in-software-eng">open data source</a> acummulated by Tracy Chou.
-							<br>
-							<strong>d3.js semantic-ui Google Apps Scripts JavaScript JSON</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Social Media Analytic</h3>
-							<div class="image-set">
-								<img src="img/facebook-analytic/fb-analytic2.png">
-						  		<img src="img/facebook-analytic/fb-analytic.png">
-						  		<img src="img/facebook-analytic/instagram.jpg">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							The <a href="http://morningsignout.github.io/facebook-analytic">Facebook Analytic</a> and <a href="http://morningsignout.github.io/instagram-analytic">Instagram Analytic</a> was created as a way for Morning Sign Out Incorporated to automate the process of counting how many likes and comments each Facebook page member or Instagram follower made to analyze company social media presence. Meant for any organization with a Facebook Page or Instagram account, it will be extended into a leaderboard to encourage more social media marketing and presence.
-							<br>
-							<strong>Facebook-Graph-API Instagram-API Javascript JSON</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>oceanize</h3>
-							<div class="image-set">
-						  		<img src="img/oceanize/oceanize-1.png">
-						  		<img src="img/oceanize/oceanize-2.png">
-						  		<img src="img/oceanize/oceanize-3.png">
-						  		<img src="img/oceanize/oceanize-4.png">
-						  		<img src="img/oceanize/oceanize-5.png">
-						  		<img src="img/oceanize/oceanize-6.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							<a href="https://oceanize.herokuapp.com/">Oceanize</a> is an application that makes you happy to be productive and organized during any conversation or meeting through a built-in chat server! Create limitless creative, resizeable, and draggable digital note-taking stickies and minimize them to store in a powerful dynamic note container that creates more room as more notes are added.
-							<br>
-							<strong>node.js express.js socket.io paper.js Javascript Jade Sass</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>xspense</h3>
-							<div class="image-set">
-						  		<img src="img/xspense/xspense-overview.png">
-						  		<img src="img/xspense/xspense-budgets.png">
-						  		<img src="img/xspense/xspense-expenses.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							<a href="https://xspense.herokuapp.com/">xspense</a>. A Django powered web application that aids in managing daily finances. Organized in a budget-expense format. Users can log in and track expenses and will be notified if they have gone over budget.
-							<br>
-							<strong>Python Django Javascript Sass</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Boulder Blast</h3>
-							<div class="image-set">
-							<img src="img/boulderblast/boulderblast-1.png">
-							<img src="img/boulderblast/boulderblast-2.png">
-							<img src="img/boulderblast/boulderblast-3.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							Blast through bullet-shooting robots and other obstacles to collect all the gems in this multi-level C++ game. Push boulders around to fill up giant ditches so you can cross. Pick up health and ammo goodies to replenish your supplies. Have fun.
-							<br>
-							<strong>C++ OpenGL</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Morning Sign Out News</h3>
-							<div class="image-set">
-						  		<img src="img/mso-news/mso-news1.jpg">
-						  		<img src="img/mso-news/mso-news2.jpg">
-						  		<img src="img/mso-news/mso-news3.jpg">
-						  		<img src="img/mso-news/mso-news4.jpg">
-						  		<img src="img/mso-news/mso-news5.jpg">
-						  		<img src="img/mso-news/mso-news6.jpg">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							Keep up to date with medicine and health news published by Morning Sign Out. This app allows users to read, search, bookmark, filter, and comment on articles of interest. Readers can also view most recent articles offline
-							<br>
-							<strong>Objective-C AFNetworking Wordpress API JSON</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>Find Me Bubble Tea</h3>
-							<div class="image-set">
-						  		<img src="img/milktea/findmemilktea.png">
-						  		<img src="img/milktea/findmemilktea-detail.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							Craving for some boba? Use this iOS app to find the 200 closest bubble tea store nearby your current location. Functional world-wide. Store menus, phone numbers, and directions to reach stores are fully integrated in this app.
-							<br>
-							<strong>Objective-C RestKit AFNetworking SOCKit JSON</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>bounce</h3>
-							<div class="image-set">
-						  		<img src="img/bounce/bounce-home.png">
-						  		<img src="img/bounce/bounce-play.png">
-						  		<img src="img/bounce/bounce-settings.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							Rebound falling bubbles before they get sucked off-screen! Apply the universal color theme you prefer from the generated choices to style this iOS application.
-							<br>
-							<strong>Objective-C ColoursAPI</strong>
-						</div>
-					</div>
-
-					<div class="project-description medium-12 large-6 columns">
-						<div class="project large-12 columns">
-							<h3>MazeRunner</h3>
-							<div class="image-set">
-								<img src="img/mazerunner/mazerunner-home.png">
-								<img src="img/mazerunner/mazerunner-duringrun.png">
-								<img src="img/mazerunner/mazerunner-pic.png">
-								<img src="img/mazerunner/mazerunner-story.png">
-								<img src="img/mazerunner/mazerunner-analytics.png">
-							</div>
-						</div>
-						<div class="description large-12 columns">
-							Imagine you are in the movie The Maze Runner. Terrifying Grievers are after you in the Maze. Enter the Glade's story as you take a run to escape Grievers while also tracking your route with this exercise and health iOS app. Be notified when you win badges after certain distances and reach milestones in the story plotline. 
-							<br>
-							<strong>Objective-C MapKit</strong>
-						</div>
-					</div>
-					
-				</div>
+				<div class="project-content"></div>
 			</section>
-
-			<section id="design">
-				<h2>Design</h2>
-
-				<div class="row">
-					<div class="large-12 columns">
-						<a href="http://graphics.dailybruin.com/give-robot-a-fish/">Give a Robot a Fish
-							<div class="fotorama design-fotorama" data-autoplay="2000"/>
-								<img src="img/design/robot-a-fish/robot1.JPG"/>
-								<img src="img/design/robot-a-fish/robot2.JPG"/>
-								<img src="img/design/robot-a-fish/robot3.JPG"/>
-							</div>
-						</a>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="large-12 columns">
-						<a href="http://graphics.dailybruin.com/caregivers/">Caring for the Caregivers
-							<div class="fotorama design-fotorama" data-autoplay="2000"/>
-								<img src="img/design/bob-2016/bob1.jpg"/>
-								<img src="img/design/bob-2016/bob2.jpg"/>
-								<img src="img/design/bob-2016/bob3.jpg"/>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="large-6 columns">
-						<a href="http://shannonphu.github.io/lively-sparks/">Lively Sparks
-						<img src="img/design/lively.jpeg"/></a>
-					</div>
-					<div class="large-6 columns">
-						<a href="http://shannonphu.github.io/roadLessTravelled/">Road Less Travelled
-						<img src="img/design/roadlesstravelled.jpeg"/></a>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="large-6 columns">
-						<a href="http://hazystarlights.tumblr.com/">Hazy Starlights
-						<img src="img/design/tumblr-1.jpeg"/></a>
-					</div>
-					<div class="large-6 columns">
-						<a href="http://hazywonder.tumblr.com/">Hazy Wonder
-						<img src="img/design/tumblr-2.jpeg"/></a>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="large-12 columns">
-						<a href="http://shannonphu.github.io/lively-beginnings/">Lively Beginnings
-							<div class="fotorama design-fotorama" data-autoplay="2000"/>
-								<img src="img/design/lively-beginnings/lively-beginnings-1.png"/>
-								<img src="img/design/lively-beginnings/lively-beginnings-2.png"/>							
-								<img src="img/design/lively-beginnings/lively-beginnings-3.png"/>
-								<img src="img/design/lively-beginnings/lively-beginnings-4.png"/>
-							</div>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<br>
 
 			<section id="contact">
 				<h2>Contact me at:</h2>
 				<div class="row">
-					<a class="large-4 columns" href="mailto:shannonphu@sbcglobal.net" id="email"><img src="img/mailicon.png" /> shannonphu@sbcglobal.net</a>
+					<a class="large-4 columns" href="mailto:shannonphu@sbcglobal.net" id="email"><img src="img/mailicon.png" /></a>
 					<a class="large-4 columns" href="https://github.com/shannonphu" id="github"><img src="img/githubicon.png" /> shannonphu</a>
 					<a class="large-4 columns" href="http://www.linkedin.com/in/shannonphu"><img src="http://www.veryicon.com/icon/128/System/Android%201/Social%20Networks%20linkedin.png" /> LinkedIn</a>
 				</div>
 			</section>
-
 		</div>
+
+
 
 		<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 		<script src="main.js"></script>
 
 		<!--FOTORAMA-->
 		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 		<!--FOTORAMA END-->
+		
 	</body>
 </html>
