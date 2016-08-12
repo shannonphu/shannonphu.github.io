@@ -58,34 +58,19 @@ nav {
 }
 
 #aboutme p {
-	// make height 100%
 	border-left: 2px solid darkgrey;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-#design {
-	text-align: center;
-	img {
-		border: 1px solid darkgrey;
-	}
-	a {
-		color: black;
-		font-family: $main-font;
-		font-size: 1.3em;
-		&:hover {
-			color: mediumaquamarine;
-		}
-	}
-	.design-fotorama {
-		margin-top: 1em;
-	}
-}
-
 #contact {
-	background-color: lightgrey;
-	padding: 10px;
 	text-align: center;
+
+	h2 {
+		font-size: 2em;
+		text-align: left;
+	}
+
 	a {
 		font-family: $main-font;
 		font-size: 1.1em;
@@ -103,21 +88,13 @@ nav {
 	}
 }
 
-section {
-	h2 {
-		font-family: $main-font;
-	}
+.project-description {
 	.project {
 		h3 {
-			position: absolute;
 			text-align: center;
-			background-color: rgba(0,0,0,0.4);
+			background-color: rgba(0,0,0,0.3);
 			color: white;
-			z-index: 10;
 			font-family: $main-font;
-		}
-		img {
-			//max-height?
 		}
 	}
 	.description {
