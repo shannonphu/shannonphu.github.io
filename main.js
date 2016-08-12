@@ -134,9 +134,9 @@ var data = { projects: [
     	description: "", 
     	tools: "", 
     	images: [
-    		"img/design/bob-2016/bob1.jpg",
-    		"img/design/bob-2016/bob2.jpg",
-    		"img/design/bob-2016/bob3.jpg"
+    		"img/design/bob-2016/bob1.JPG",
+    		"img/design/bob-2016/bob2.JPG",
+    		"img/design/bob-2016/bob3.JPG"
     	]
     },
     {
