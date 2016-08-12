@@ -47,9 +47,11 @@
 				<div class="project-description medium-12 large-6 columns">
 					<div class="project large-12 columns">
 						<h3>{{title}}</h3>
-						<div class="fotorama fotorama-project" data-autoplay="2000">
+						<div class="fotorama"
+							data-transition="crossfade"
+							data-autoplay="false">
 							{{#images}}
-							<img src="{{this}}">
+							<a href="{{this}}">
 					  		{{/images}}
 					  	</div>
 					</div>
