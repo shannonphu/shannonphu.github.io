@@ -5,6 +5,10 @@ $side-font: 'Marvel', sans-serif;
 	font-family: Trebuchet MS, sans-serif;
 }
 
+h2 {
+	font-family: $side-font;
+}
+
 nav {
 	background: url('img/background/congruent_outline.png');
 	height: 100%;
@@ -12,7 +16,7 @@ nav {
 	z-index: 10;
 	padding: 20px;
 	a {
-		font-family: 'Marvel', sans-serif;
+		font-family: $side-font;
 		color: white;
 		font-size: 1.4em;
 		line-height: 2em;
@@ -94,7 +98,11 @@ nav {
 			text-align: center;
 			background-color: rgba(0,0,0,0.3);
 			color: white;
-			font-family: $main-font;
+			font-family: $side-font;
+			margin: 0;
+		}
+		img {
+			width: 100%;
 		}
 	}
 	.description {
