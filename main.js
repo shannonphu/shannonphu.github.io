@@ -203,6 +203,7 @@ function checkWidth() {
     else {
         var navWidth = $('nav').outerWidth();
         $('nav').removeClass("small-12 columns");
+        $('nav').css("position", "fixed");
         $('.content').css("margin-left", navWidth + 20);
     }       
 }
