@@ -1,6 +1,9 @@
 #aboutme p, .description {
   font-family: Trebuchet MS, sans-serif; }
 
+h2 {
+  font-family: "Marvel", sans-serif; }
+
 nav {
   background: url("img/background/congruent_outline.png");
   height: 100%;
@@ -8,7 +11,7 @@ nav {
   z-index: 10;
   padding: 20px; }
   nav a {
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     color: white;
     font-size: 1.4em;
     line-height: 2em; }
@@ -70,7 +73,10 @@ nav {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  font-family: "Quantico", sans-serif; }
+  font-family: "Marvel", sans-serif;
+  margin: 0; }
+.project-description .project img {
+  width: 100%; }
 .project-description .description {
   margin-bottom: 2em; }
   .project-description .description a {

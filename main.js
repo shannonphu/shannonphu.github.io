@@ -154,42 +154,29 @@ var data = { projects: [
   ]};
 
 $(document).ready(function() {
-	var source   = $("#project-template").html();
-	var template = Handlebars.compile(source);
-	$(".project-content").html(template(data));
-
-	checkWidth();
-	$(window).resize(checkWidth);
+    var source   = $("#project-template").html();
+    var template = Handlebars.compile(source);
+    $(".project-content").html(template(data));
 
 	// set rows for project blocks
 	var blocksPerRow;
 	if ($(window).width() >= 1025)
-		blocksPerRow = 2;
+		blocksPerRow ="2";
 	else
-		blocksPerRow = 1;
-	$('.project-description:nth-child(' + String(blocksPerRow) + 'n)').each(function(index) {
-	    $(this).prevAll('.project-description').andSelf().wrapAll('<div class="row"/>');
+		blocksPerRow = "1";
+
+	$('.project-description:nth-child(' + blocksPerRow + 'n)').each(function(index) {
+	    $(this).prevAll('.project-description').andSelf().wrapAll('<div class="row"></div>');
 	});
 
 	if (data.projects.length % 2 != 0) {
-		$('.project-description:last-child').wrap('<div class="row"/>');
+		$('.project-description:last-child').wrap('<div class="row" />');
 	}
 	
+    checkWidth();
+    $(window).resize(checkWidth);
 
-	// make nav + content divs responsive
-	function checkWidth() {
-		if ($(window).width() <= 575) {
-			$('nav').css("position", "relative");
-			$('nav').addClass("small-12 columns");
-			$('.content').css("margin-left", 0);
-		}
-		else {
-			var navWidth = $('nav').outerWidth();
-			$('nav').removeClass("small-12 columns");
-			$('nav').css("position", "fixed");
-			$('.content').css("margin-left", navWidth + 20);
-		}		
-	}
+
 
 	// Scroll Speed
 	$('a[href^="#"]').on('click',function (e) {
@@ -205,3 +192,18 @@ $(document).ready(function() {
 	    });
 	});
 });
+
+// make nav + content divs responsive
+function checkWidth() {
+    if ($(window).width() <= 575) {
+        $('nav').css("position", "relative");
+        $('nav').addClass("small-12 columns");
+        $('.content').css("margin-left", 0);
+    }
+    else {
+        var navWidth = $('nav').outerWidth();
+        $('nav').removeClass("small-12 columns");
+        $('nav').css("position", "fixed");
+        $('.content').css("margin-left", navWidth + 20);
+    }       
+}
