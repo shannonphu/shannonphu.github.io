@@ -78,6 +78,7 @@ nav {
 .project-description .project img {
   width: 100%; }
 .project-description .description {
+  margin-top: 1em;
   margin-bottom: 2em; }
   .project-description .description a {
     color: mediumaquamarine; }
