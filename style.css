@@ -75,8 +75,8 @@ nav {
   color: white;
   font-family: "Marvel", sans-serif;
   margin: 0; }
-.project-description .project img {
-  width: 100%; }
+.project-description .project .fotorama .fotorama__wrap {
+  width: 100% !important; }
 .project-description .description {
   margin-top: 1em;
   margin-bottom: 2em; }

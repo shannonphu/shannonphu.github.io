@@ -101,8 +101,10 @@ nav {
 			font-family: $side-font;
 			margin: 0;
 		}
-		img {
-			width: 100%;
+		.fotorama {
+			.fotorama__wrap {
+				width: 100% !important; // Note: this is bad practice but necessary because fotorama uses inline styles
+			}
 		}
 	}
 	.description {
