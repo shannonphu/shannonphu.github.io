@@ -86,9 +86,9 @@ var data = { projects: [
         description: "| A mobile app to administer the PHQ-9 mental health exam on university students. Built for Morning Sign Out Inc.", 
         tools: "Objective-C Firebase", 
         images: [
-            "img/silverlining/silverlining1.jpeg",
-            "img/silverlining/silverlining2.jpeg",
-            "img/silverlining/silverlining3.jpeg"
+            "img/silverlining/silverlining1.png",
+            "img/silverlining/silverlining2.png",
+            "img/silverlining/silverlining3.png"
         ]
     },
     {
