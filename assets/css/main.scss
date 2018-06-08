@@ -3,6 +3,12 @@
 
 @import "base";
 
+$personal-site-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.about {
+	font-family: $personal-site-font-family;
+}
+
 .about-title {
 	h1 {
 		display: inline;
@@ -19,7 +25,7 @@
 }
 
 .project-card {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: $personal-site-font-family;
 	margin-right: 10px;
 	margin-bottom: 20px;
 	padding: 20px;
