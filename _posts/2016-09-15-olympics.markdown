@@ -1,0 +1,6 @@
+---
+title: "Bing 2016 Olympics Search Experience"
+description: "During my summer 2016 internship at Microsoft, I worked in Bing Experiences to help build the Olympics portal. I specifically worked on the international Events to Watch module which showed the top 5 country-specific events to watch of the day. These events were determined through machine learning by Bing Predicts." 
+tools: "C# .NET"
+image: "olympics.png"
+---

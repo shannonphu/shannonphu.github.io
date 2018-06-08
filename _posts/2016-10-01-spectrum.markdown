@@ -1,7 +1,0 @@
----
-title: "Spectrum"
-link: "http://dailybruin.com/category/spectrum/"
-description: "by the Daily Bruin is a photo gallery showing high quality photosets taken by newsroom photographers. View all the galleries that exist or browse through a slideshow of a gallery of interest!"
-tools: "PHP JavaScript Wordpress API"
-image: "spectrum.jpg"
----
