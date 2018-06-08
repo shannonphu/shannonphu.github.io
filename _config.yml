@@ -3,6 +3,7 @@ name: Shannon Phu
 title: Shannon Phu
 description: I am a fourth year Computer Science and Engineering student at UCLA. I most recently was a software engineering intern at Microsoft for the Seeing AI team inside the AI & Research division where I developed a computer vision model for image recognition of currency bills. In the past, I have also been a software engineering intern at Uber on the Maps Services team and previously interned at Microsoft in Bing Experiences. I am currently interested in learning more about computer vision and map services. I find enjoyment in developing web and iOS mobile applications. I love self-learning and am excited about building cool products. Learn more about me through my projects below or through my resume.
 permalink: ':title/'
+url: https://shannonphu.github.io/
 
 # Social
 email: shannonphu@gmail.com
