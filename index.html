@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+<h1>Projects</h1>
 <div class="pure-g">
 	{% for project in paginator.posts %}
 	<div class="pure-u-1 pure-u-md-1-2">
@@ -8,7 +9,7 @@ layout: base
 			<p class="title">{{project.title}}</p>
 			<img class="image" src="/assets/img/{{project.image}}" />
 			<p class="description">{{project.description}}</p>
-			<p class="tools">{{project.tools}}</p>
+			<p class="tools"><code>{{project.tools}}</code></p>
 		</div>
 
 	</div>
