@@ -1,0 +1,173 @@
+@import "_normalize";
+@import "syntax";
+
+$text-background-color:#fff;
+$sidebar-background-color: #333333;
+$subtle-card-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+$card-shadow: 0px 50px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+$collection-card-height: 200px;
+$global-background-color: #ecf3f3;
+$global-font-family: "Abel";
+$logo-font-family: "Anaheim";
+$global-accent-color-light: #B2E6D4;
+$global-accent-color-dark: rgb(70, 179, 140);
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: $global-font-family, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar-logo, .menu-items {
+        font-size: calc(25px + 5 * ((100vw - 500px) / 900));
+	}
+}
+
+@media screen and (min-width: 500px) {
+    html {
+		font-size: calc(15px + 5 * ((100vw - 500px) / 900));
+	}
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+body {
+  color: #515151;
+  background-color: $global-background-color;
+}
+
+a {
+  color: $global-accent-color-dark;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+	color: $global-accent-color-light;
+	cursor: pointer;
+  }
+}
+
+// Sidebar
+.sidebar {
+	background: url('https://raw.githubusercontent.com/shannonphu/advice/master/assets/img/congruent_outline.jpg');
+	background-color: $sidebar-background-color;
+	background-position: center;
+	position: fixed;
+	height: 100%;
+	width: inherit;
+	padding: 30px 0;
+	text-align: center;
+
+	.title {
+		padding: 0 30px;
+	}
+
+	.sidebar-logo {
+		font-family: $logo-font-family;
+		font-size: 1.8em;
+		border: 2px solid $global-accent-color-light;
+		text-align: center;
+		padding: 25px 0;
+		transition: all .3s;
+		display: block;
+		color: white;
+	}
+  
+	.sidebar-menu {
+		font-family: $global-font-family;
+		padding: 0;
+		.menu-items {
+			list-style: none;
+		}
+		.menu-links {
+			font-size: 1.2rem;
+			display: block;
+			text-decoration: none;
+			padding: 15px 20px;
+			color: #fff;
+			transition: all .35s;
+			&:hover {
+				transform: translateX(5px);
+				background-color:rgba(255, 255, 255, 0.4);
+				border-left: 5px solid $global-accent-color-light;
+			}
+		}
+	}
+}
+
+.social-wrapper {
+  text-align: center;
+  .social-items {
+    display: inline-block;
+  }
+  .social-links {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .social-icons {
+    font-size: 1.6rem;
+    padding: 0.4rem 0.5rem;
+    color: #ddd;
+    transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.home-social {
+	margin: 150px 0 50px 0;
+	width: 100%;
+}
+
+.post {
+	background-color: $text-background-color;
+	box-shadow: $card-shadow;
+	padding: 10px 40px;
+}
+
+.page-content {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+// Content
+.content {
+  padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.sidebar {
+		position: relative;
+	}
+
+	.content {
+		padding: 20px;
+	}
+
+	.post {
+		padding: 20px;
+	}
+}
+
+.web-table {
+	th {
+		padding: 10px;
+	}
+
+	td {
+		padding: 5px;
+	}
+
+	tr {
+		border-bottom: 1px solid #ddd;
+	}
+}
