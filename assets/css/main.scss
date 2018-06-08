@@ -3,6 +3,21 @@
 
 @import "base";
 
+.about-title {
+	h1 {
+		display: inline;
+	}
+	aside {
+		float: right;
+		font-size: 2em;
+	}
+}
+
+.about-icon {
+	display: inline-block;
+	list-style-type: none;
+}
+
 .project-card {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin-right: 10px;

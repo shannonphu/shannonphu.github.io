@@ -3,6 +3,7 @@
 
 $text-background-color:#fff;
 $sidebar-background-color: #333333;
+$sidebar-text-color: #fff;
 $subtle-card-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
 $card-shadow: 0px 50px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
 $collection-card-height: 200px;
@@ -91,7 +92,7 @@ a {
 			display: block;
 			text-decoration: none;
 			padding: 15px 20px;
-			color: #fff;
+			color: $sidebar-text-color;
 			transition: all .35s;
 			&:hover {
 				transform: translateX(5px);

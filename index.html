@@ -1,17 +1,35 @@
+--- 
+layout: base 
 ---
-layout: base
----
-<h1>Projects</h1>
-<div class="pure-g">
-	{% for project in paginator.posts %}
-	<div class="pure-u-1 pure-u-md-1-2">
-		<div class="post project-card">
-			<p class="title">{{project.title}}</p>
-			<img class="image" src="/assets/img/{{project.image}}" />
-			<p class="description">{{project.description}}</p>
-			<p class="tools"><code>{{project.tools}}</code></p>
-		</div>
 
-	</div>
-	{% endfor %}
+<div class="about-title">
+	<h1>About Me</h1>
+	<aside>
+		<li class="about-icon">
+			<i class="fab fa-microsoft" aria-hidden="true"></i>
+		</li>
+		<li class="about-icon">
+			<i class="fab fa-uber" aria-hidden="true"></i>
+		</li>
+	</aside>
 </div>
+{% include about.html %}
+
+<h1>Projects</h1>
+<section>
+	<div class="pure-g">
+		{% for project in paginator.posts %}
+		<div class="pure-u-1 pure-u-md-1-2">
+			<div class="post project-card">
+				<p class="title">{{project.title}}</p>
+				<img class="image" src="/assets/img/{{project.image}}" />
+				<p class="description">{{project.description}}</p>
+				<p class="tools">
+					<code>{{project.tools}}</code>
+				</p>
+			</div>
+
+		</div>
+		{% endfor %}
+	</div>
+</section>
