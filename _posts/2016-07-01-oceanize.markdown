@@ -1,0 +1,7 @@
+---
+title: "oceanize"
+link: "https://oceanize.herokuapp.com/"
+description: "Oceanize is an application that makes you happy to be productive and organized during any conversation or meeting through a built-in chat server! Create limitless creative, resizeable, and draggable digital note-taking stickies and minimize them to store in a powerful dynamic note container that creates more room as more notes are added."
+tools: "node.js socket.io paper.js"
+image: "oceanize.png"
+---

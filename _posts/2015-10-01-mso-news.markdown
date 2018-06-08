@@ -1,0 +1,7 @@
+---
+title: "Morning Sign Out News"
+link: "https://itunes.apple.com/us/app/morning-signout/id1099515952?mt=8"
+description: "Keep up to date with medicine and health news published by Morning Sign Out. This app allows users to read, search, bookmark, filter, and comment on articles of interest. Readers can also view most recent articles offline."
+tools: "Objective-C AFNetworking"
+image: "mso-news.png"
+---
