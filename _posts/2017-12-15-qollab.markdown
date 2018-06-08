@@ -1,0 +1,6 @@
+---
+title: "Qollab"
+description: "Qollab is a realtime virtual whiteboard to help students ask questions about lecture content in a classroom. Teachers can write on a canvas on a tablet or computer, and their lecture material is broadcast in realtime to student's devices in the class. Students can annotate the whiteboard with questions and comments."
+tools: "React.js node.js MongoDB Docker"
+image: "qollab.png"
+---

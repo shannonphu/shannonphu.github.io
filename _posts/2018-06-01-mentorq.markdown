@@ -1,0 +1,6 @@
+---
+title: "MentorQ"
+description: "MentorQ is a realtime mentor hailing system built for hackathons to provide mentors for people who need help. Hackers submit tickets when they want to ask a mentor a question. Mentors can claim and resolve tickets."
+tools: "React.js Redux node.js MongoDB Docker"
+image: "mentorq.png"
+---

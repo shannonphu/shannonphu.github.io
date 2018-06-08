@@ -1,0 +1,6 @@
+---
+title: "Seeing AI | Currency Recognition"
+description: "Seeing AI is the talking camera for the blind which provides computer vision tools to aid the visually impaired through a mobile app. During my 2017 summer internship at Microsoft I implemented the currency detection feature for various types of currency."
+tools: "C# Objective-C Python"
+image: "seeing-ai.jpg"
+---
