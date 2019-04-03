@@ -1,0 +1,6 @@
+---
+title: "BPool"
+description: "Looking for a long distance rideshare but don't want to pay for an Uber? Both drivers and riders can post their trips or request a trip through BPool which provides a platform to match riders to cars with space going to the same destination city."
+tools: "node.js MongoDB"
+image: "bpool.png"
+---
